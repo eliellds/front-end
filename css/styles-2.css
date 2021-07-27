@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Comfortaa', cursive;
+    background-color: #cfd8dc;
+    color: white;
+    text-align: center;
+}
+header {
+    background-color: #29434e;
+    width: 960px;
+    padding: 30px;
+    border-style: dotted;
+    text-align: center;
+    margin: auto;
+}
+aside {
+    background-color: #819ca9;
+    color: black;
+    display: inline-block;
+    width: 295px;
+    height: 900px;
+    padding: 30px;
+    border-style: dotted;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 20px;
+}
+article {
+    background-color: #546e7a;
+    display: inline-block;
+    width: 645px;
+    height: 900px;
+    padding: 30px;
+    border-style: dotted;
+    text-align: center;
+    font-size: 20px;
+}
+section {
+    background-color: #cfd8dc;
+    width: 960px;
+    margin: 20px auto;
+    font-size: 0px;
+}
+footer {
+    background-color: #29434e;
+    width: 960px;
+    padding: 30px;
+    border-style: dotted;
+    text-align: center;
+    margin: auto;
+    box-sizing: border-box;
+}
