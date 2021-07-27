@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="css/styles.css"/>
+        <title>Formulário de Contato</title>
+    </head>
+    <body>
+        <form>
+            <h1>Formulário de Contato</h1>
+            <br>
+            <label for="nome">Nome e sobrenome</label>
+            <br>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required/>
+            <br>
+            <label for="email">E-mail</label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required/>
+            <hr>
+
+            <h4>Assunto da mensagem</h4>
+            <select name="assuntos" required>
+                <option value="">Selecione</option>
+                <option value="Dúvida">Dúvida</option>
+                <option value="Sugestão">Sugestão</option>
+                <option value="Crítica">Crítica</option>
+                <option value="Elogio">Elogio</option>
+                <option value="Naruto">Naruto</option>
+            </select>
+            <hr>
+
+            <h4>Gênero</h4>
+            <input type="radio" id="femininoId" name="genero" value="Feminino"/>
+            <laber for="femininoId">Feminino</laber>
+            <br>
+            <input type="radio" id="masculinoId" name="genero" value="Masculino"/>
+            <laber for="masculinoId">Masculino</laber>
+            <br>
+            <input type="radio" id="naoId" name="genero" value="Prefiro não responder"/>
+            <laber for="naoId">Prefiro não responder</laber>
+            <hr>
+
+            <h4>Passatempos</h4>
+            <input type="checkbox" name="hobbies" id="gamesId" value="Games"/>
+            <laber for="gamesId">Games</laber>
+            <br>
+            <input type="checkbox" name="hobbies" id="leituraId" value="Leitura"/>
+            <laber for="leituraId">Leitura</laber>
+            <br>
+            <input type="checkbox" name="hobbies" id="futebolId" value="Futebol"/>
+            <laber for="futebolId">Futebol</laber>
+            <br>
+            <input type="checkbox" name="hobbies" id="desenharId" value="Desenho/ pintura"/>
+            <laber for="desenharId">Desenho/ pintura</laber>
+            <br>
+            <input type="checkbox" name="hobbies" id="corridaId" value="Corrida"/>
+            <laber for="corridaId">Corrida</laber>
+            <hr>
+
+            <h4>Deixe seu comentrário:</h4>
+            <textarea name="comentario" placeholder="Deixe seu comentário"></textarea>
+            <br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Excluir</button>
+            <br><br>
+            <marquee><a href="https://github.com/eliellds">GitHub Profile</a></marquee>
+        </form>
+    </body>
+</html>

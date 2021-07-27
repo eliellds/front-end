@@ -2,6 +2,8 @@
 
 body {
     font-family: 'Indie Flower', cursive;
+    background-color: #21292e;
+    color: #ffffff;
 }
 h1 {
     color: #e64a19;
@@ -16,4 +18,39 @@ p {
     text-align: justify;
     font-size: 14px;
     line-height: 23px;
+}
+strong {
+    color: #e64a19;
+}
+mark {
+    background-color: #e64a19;
+    color: #ffffff;
+}
+input {
+    background-color: #15191b;
+    color: #ffffff;
+}
+input:focus {
+    background-color: #6a8691;
+}
+input:hover {
+    background-color: #6a8691;
+}
+select {
+    background-color: #15191b;
+    color: #ffffff;
+}
+textarea {
+    resize: vertical;
+    background-color: #15191b;
+    color: #ffffff;
+}
+a {
+    color: #79d3f7;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: #e64a19;
+    font-weight: bolder;
 }
