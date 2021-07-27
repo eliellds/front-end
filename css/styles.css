@@ -31,10 +31,7 @@ input {
     color: #ffffff;
 }
 input:focus {
-    background-color: #6a8691;
-}
-input:hover {
-    background-color: #6a8691;
+    background-color: #5a717a;
 }
 select {
     background-color: #15191b;
@@ -44,6 +41,9 @@ textarea {
     resize: vertical;
     background-color: #15191b;
     color: #ffffff;
+}
+textarea:focus {
+    background-color: #5a717a
 }
 a {
     color: #79d3f7;
