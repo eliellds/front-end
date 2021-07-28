@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    border-radius: 5px;
 }
 body {
     font-family: 'Comfortaa', cursive;
@@ -21,15 +22,25 @@ aside {
     background-color: #819ca9;
     color: black;
     display: inline-block;
-    width: 295px;
+    width: 293px;
     height: 900px;
     padding: 30px;
     border-style: dotted;
     text-align: center;
     font-size: 20px;
-    margin-right: 20px;
+    margin: 20px 16px 20px 0px;
 }
-article {
+/* article {
+    background-color: #546e7a;
+    display: inline-block;
+    width: 645px;
+    height: 900px;
+    padding: 30px;
+    border-style: dotted;
+    /* text-align: center;
+    font-size: 20px;
+} */ 
+section {
     background-color: #546e7a;
     display: inline-block;
     width: 645px;
@@ -38,12 +49,7 @@ article {
     border-style: dotted;
     text-align: center;
     font-size: 20px;
-}
-section {
-    background-color: #cfd8dc;
-    width: 960px;
-    margin: 20px auto;
-    font-size: 0px;
+    margin: 20px 0px 20px 0px;
 }
 footer {
     background-color: #29434e;
