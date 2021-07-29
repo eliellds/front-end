@@ -3,6 +3,7 @@
 * {
     box-sizing: border-box;
     border-radius: 5px;
+    vertical-align: top;
 }
 
 body {
@@ -53,4 +54,45 @@ a {
 a:hover {
     color: #61dacf;
     text-decoration: underline;
+}
+
+.imagens {
+    border-radius: 100px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    margin-bottom: 20px;
+}
+
+#C {
+    overflow: auto;
+}
+
+.artigos {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 450px;
+}
+
+p {
+    text-align: justify;
+    font-size: 15px;
+    padding: 20px;
+    width: 400px;
+    margin: auto;
+    line-height: 20px;
+}
+
+audio, video {
+    width: 250px;
+    margin-left: -8px;
+}
+
+.destaque:hover {
+    background-color: #e5f5ca;
+    color: #000;
+    font-size: 22px;
+    line-height: 30px;
+    padding: 20px;
+    transition: 0.2s;
+    font-weight: bolder;
 }

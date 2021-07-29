@@ -19,7 +19,15 @@ body {
 
 .maiores {
     margin: 0 auto;
+}
+
+.info {
     background-color: #263238;
+}
+
+.principal {
+    background-color: #7afaaf;
+    color: #1c2529;
 }
 
 .fora {
@@ -74,9 +82,24 @@ p {
 .listas {
     list-style: none;
     padding: 0;
+    line-height: 27px;
 }
 
 mark {
+    background-color: #263238;
+    color: #fff;
+}
+mark:hover {
     background-color: #1c2529;
-    color: #fff
+    color: #e5f5ca
+}
+
+.destaque:hover {
+    background-color: #e5f5ca;
+    color: #000;
+    font-size: 22px;
+    line-height: 30px;
+    padding: 20px;
+    transition: 0.2s;
+    font-weight: bolder;
 }
