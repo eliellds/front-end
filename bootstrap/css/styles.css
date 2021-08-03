@@ -1,0 +1,36 @@
+header {
+    background-color: #121212;
+}
+
+a {
+    text-decoration: none;
+}
+
+.first-header {
+    color: #fff;
+    font-size: 12.6px;
+}
+
+.infos {
+    padding: 0;
+}
+
+.log {
+    color: #fb0000;
+}
+
+.my-items {
+    color: #fff;
+    padding: 0 14px 0 0;
+}
+
+.contact {
+    padding: 0;
+    margin-left: 20px;
+}
+
+.social-media {
+    margin-left: 5px;
+    padding: 0;
+    width: 14px;
+}

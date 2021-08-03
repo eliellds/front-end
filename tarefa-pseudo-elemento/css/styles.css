@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: rgb(59, 116, 201);
+}
+
+/* .container-principal {
+    margin: 0;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    height: 100%;
+} */
+
+.container-perfil, .perfil {
+    background-color: rgb(231, 231, 231);
+    border-radius: 2px;
+}
+
+.container-perfil {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 0 10px 0 rgb(33, 55, 88);
+}
+
+.perfil {
+    width: 100%;
+    align-items: center;
+}
+
+.nome-perfil {
+    font-size: 14px;
+    padding: 20px 20px 40px 90px;
+    color:rgb(94, 94, 94);
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.seguidores {
+    position: absolute;
+    font-size: 12px;
+    color:rgb(161, 161, 161);
+    margin: -35px 0 0 90px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.seletor:hover {
+    background-color: #fff;
+    color:rgb(59, 116, 201);
+}
+
+.seguidores::after {
+    content: " seguidores"
+}
+
+.nome-perfil::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    display: block;
+    position: absolute;
+    margin: -12px 0 0 -75px;
+    background-position: center;
+    background-size: cover;
+}
+
+.nome-1::before {
+    background-image: url(../images/paul-walker-brian-oconner-velozes-furiosos-9-2021.jpg);
+}
+
+.nome-2::before {
+    background-image: url(../images/roman-pearce.jpg);
+}
+
+.nome-3::before {
+    background-image: url(../images/suki-2-fast-2-furious.jpg);
+}
+
+.nome-4::before {
+    background-image: url(../images/han-velozes-e-furiosos.jpeg);
+}
+
+.nome-5::before {
+    background-image: url(../images/dk-tokyo-drift.jpg);
+}
+
+.nome-6::before {
+    background-image: url(../images/toretto-velozes-e-furiosos.jpg);
+}
+
+@media (max-width: 345px) {
+
+    .container-perfil {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 280px) {
+
+    .perfil {
+        justify-content: center;
+    }
+
+    .nome-perfil {
+        padding: 20px 20px 40px 20px;
+    }
+
+    .seguidores {
+    margin: -35px 0 0 20px;
+    }
+
+    .nome-perfil::before {
+        display: none;
+    }
+
+    .container-perfil {
+        min-width: 120px;
+    }
+
+}
