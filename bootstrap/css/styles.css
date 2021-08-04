@@ -6,12 +6,27 @@ a {
     text-decoration: none;
 }
 
-.first-header {
+.infos::before {
+    content: "";
+    background-image: url("../images/user.png");
+    background-repeat: no-repeat;
+    background-size: 13px;
+    width: 13px;
+    height: 13px;
+    margin-left: -17px;
+    margin-top: 3px;
+    position: absolute;
+}
+
+.headers, .my-items {
     color: #fff;
+}
+
+.first-header {
     font-size: 12.6px;
 }
 
-.infos {
+.profile, .contact, .social-media, .search-box, .cart-box {
     padding: 0;
 }
 
@@ -20,17 +35,90 @@ a {
 }
 
 .my-items {
-    color: #fff;
     padding: 0 14px 0 0;
+    transition: 0.4s;
+}
+.my-items:hover, .log:hover {
+    color: #fb0000;
 }
 
 .contact {
-    padding: 0;
     margin-left: 20px;
+}
+.contact::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-size: 13px;
+    margin-left: -15px;
+    margin-top: 4px;
+}
+.phone::before {
+    background-image: url(../images/phone-call.png);
+}
+.whatsapp::before {
+    background-image: url(../images/whatsapp.png);
 }
 
 .social-media {
     margin-left: 5px;
-    padding: 0;
     width: 14px;
+    
+}
+
+.custom-search, .custom-buttom, .cart {
+    border-radius: 0;
+    border: none;
+    height: 50px;
+}
+
+.custom-search {
+    width: 260px;
+    margin: 0;
+}
+
+.custom-buttom {
+    background-color: #414141;
+    width: 60px;
+}
+
+.search-buttom {
+    width: 20px;
+    padding-bottom: 2px;
+}
+
+.logo {
+    width: 250px;
+}
+
+.cart {
+    padding: 14px 1px 1px 1px;
+    width: 150px;
+    font-size: 14px;
+}
+.cart-l {
+    color: #fff;
+    background-color: #414141;
+    padding-left: 40px;
+    transition: 0.4s;
+}
+.cart-l:hover {
+    color: #fff;
+}
+.cart-l::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-size: 25px;
+    margin-left: -15px;
+    margin-top: -2px;
+    background-image: url("../images/shopping-cart.png");
+    background-repeat: no-repeat;
+}
+.cart-r {
+    background-color: #fff;
 }
