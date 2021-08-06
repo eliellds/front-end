@@ -2,106 +2,326 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>Uzgames a primeira e a mais tradicional rede de lojas especializada em games no Brasil</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Uzgames a primeira e a mais tradicional rede de lojas especializada em games no Brasil</title>
 </head>
 
 <body>
-    <!-- begin header -->
-    <header>
-        <div class="container hole-header">
-            <!-- begin first header -->
-            <div class="row align-items-center first-header headers py-1 ps-3 border-bottom">
-                <div class="col-7 infos ps-2">
-                    seja bem-vindo! Faça seu <a href="#sign-in"  class="log"><b>login</b></a> 
-                    ou <a href="#sign-up"  class="log"><b>cadastre-se</b></a>
-                </div>
-                <div class="col-1 profile"><a class="my-items" href="#orders">Meus Pedidos</a></div>
-                <div class="col-1 profile"><a class="my-items" href="#account">Minha Conta</a></div>
-                <div class="col-1 contact phone">(11) 4095-3013</div>
-                <div class="col-1 contact whatsapp">(11) 95141-1450</div>
-                <div class="d-flex col-1 social-media mb-1 justify-items-end">
-                    <a href="https://www.facebook.com/najaesportsteam" target="_blanc"><img class="social-media" src="./images/facebook.png"/></a>
-                    <a href="https://www.instagram.com/najaesportsteam/" target="_blanc"><img class="social-media" src="./images/instagram.png"/></a>
-                </div>
-            </div>
-            <!-- begin second header -->
-            <div class="row align-items-center second-header headers py-1">
-                <div class="col-4 search-box">
-                    <form class="d-flex py-4">
-                        <input class="form-control custom-search" type="search" placeholder="Busca" aria-label="Busca">
-                        <button class="btn custom-buttom" type="submit"><img src="./images/lupa.png" class="search-buttom"/></button>
-                      </form>
-                </div>
-                <div class="col-4 justify-content-center ps-5">
-                    <a href="#uzgames"><img src="./images/uzgame-site-e-logo.png" class="logo" alt="UZGAMES" title="UZGAMES"/></a>
-                </div>
-                <div class="col-4 cart-box">
-                    <form class="d-flex py-4 justify-content-end">
-                        <buttom class="btn cart cart-l">Carrinho</buttom>
-                        <buttom class="btn cart cart-r">0 Itens | R$ 0,00</buttom>
-                    </form>
-                </div>
-            </div>
+  <!-- begin header -->
+  <header>
+    <div class="container hole-header">
+      <!-- begin first header -->
+      <div class="row align-items-center first-header headers py-1 ps-3 justify-content-between">
+        <div class="col-lg-4 col-xl-7 infos ps-2">
+          seja bem-vindo! Faça seu
+          <a href="#sign-in" class="log red-links"><b>login</b></a>
+          ou
+          <a href="#sign-up" class="log red-links"><b>cadastre-se</b></a>
         </div>
-    </header>
-    <!-- end header -->
+        <div class="col-1 profile"><a class="my-items" href="#orders">Meus Pedidos</a></div>
+        <div class="col-1 profile"><a class="my-items" href="#account">Minha Conta</a></div>
+        <div class="col-lg-2 col-xl-1 contact phone">(11) 4095-3013</div>
+        <div class="col-lg-2 col-xl-1 contact whatsapp">(11) 95141-1450</div>
+        <div class="d-flex col-lg-2 col-xl-1 social-media mb-1 me-3">
+          <a href="https://www.facebook.com/najaesportsteam" target="_blanc"><img class="social-media"
+              src="./images/facebook.png" /></a>
+          <a href="https://www.instagram.com/najaesportsteam/" target="_blanc"><img class="social-media"
+              src="./images/instagram.png" /></a>
+        </div>
+      </div>
+      <!-- begin second header -->
+      <div class="row align-items-center second-header headers py-1">
+        <div class="col-4 search-box">
+          <form class="d-flex py-4">
+            <input class="form-control custom-search" type="search" placeholder="Busca" aria-label="Busca">
+            <button class="btn custom-buttom" type="submit"><img src="./images/lupa.png"
+                class="search-buttom" /></button>
+          </form>
+        </div>
+        <div class="col-4 justify-content-center ps-5">
+          <a href="#uzgames"><img src="./images/uzgame-site-e-logo.png" class="logo" alt="UZGAMES"
+              title="UZGAMES" /></a>
+        </div>
+        <div class="col-4 cart-box">
+          <form class="d-flex py-4 justify-content-end">
+            <buttom class="btn cart cart-l">Carrinho</buttom>
+            <buttom class="btn cart cart-r">0 Itens | R$ 0,00</buttom>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- end header -->
 
-    <!-- menu -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+  <!-- begin menu -->
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container">
+      <div class="navbar-d-flex col-12" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-between">
+          <li class="nav-item dropdown">
+            <a class="nav-link plus-nav white-links" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <b>+</b> Ver Todas
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link other-nav white-links" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              SUPER HITS
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link other-nav white-links" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              JOGOS
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link other-nav white-links" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              CONSOLES
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link other-nav white-links" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              PC GAMER
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link other-nav white-links" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              CONTROLES
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link other-nav white-links" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              COLECIONÁVEIS
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link other-nav white-links" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              FUNKOS
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link other-nav white-links" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              USADOS
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link other-nav white-links" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              ACESSÓRIOS
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link other-nav white-links" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              RARIDADES
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2 d-none" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success d-none" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- end menu -->
+
+  <!-- begin carousel -->
+  <div id="carouselExampleControls" class="carousel slide mb-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="8000">
+        <a href="#carousel"><img src="./images/banner-consoles-ps4-nintento-switch.png" class="d-block w-100"
+            alt="Consoles PS4 Spider-Man Nintendo Switch"></a>
+      </div>
+      <div class="carousel-item" data-bs-interval="8000">
+        <a href="#carousel">
+          <img src="./images/banner-cadeira-gamer.jpg" class="d-block w-100" alt="Cadeira Gamer">
+        </a>
+      </div>
+      <div class="carousel-item" data-bs-interval="8000">
+        <a href="#carousel">
+          <img src="./images/banner-monte-seu-pc-gamer.png" class="d-block w-100" alt="Monte Seu PC Gamer">
+        </a>
+      </div>
+      <div class="carousel-item" data-bs-interval="8000">
+        <a href="#carousel">
+          <img src="./images/banner-jogue-e-troque-usado.jpg" class="d-block w-100" alt="Jogue e Troque Seu Usado">
+        </a>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- end carousel -->
+
+  <!-- begin product list -->
+  <div class="container product-list">
+
+    <div class="row mt-5 mb-3">
+      <h3 class="list-name">PRODUTOS EM <em class="list-name emphasize-red">DESTAQUE</em></h3>
+    </div>
+
+    <ul class="row highlight-product-list">
+      <li class="col-3">
+        <div class="card product-card p-3">
+          <a href="#buy" class="d-flex pic-box">
+            <img src="./images/jogo-ps4-marvels-spiderman-miles-morales.webp" class="card-img-top game-pic"
+              alt="Jogo PS4 Marvels Spider-Man Miles Morales">
+          </a>
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
           </div>
         </div>
-      </nav>
-      ver todas 
-      super hits 
-      jogos 
-      consoles 
-      pc gamer 
-      controles 
-      colecionáveis 
-      funkos 
-      usados 
-      acessórios 
-      raridades
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+      </li>
+      <li class="col-3">
+        <div class="card product-card p-3">
+          <a href="#buy" class="d-flex pic-box">
+            <img src="./images/jogo-nintendo-switch-the-legend-of-zelda-breath-of-the-wild.jpg"
+              class="card-img-top game-pic" alt="Jogo Nintendo Switch The Legend Of Zelda Breath Of The Wild">
+          </a>
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+      </li>
+      <li class="col-3">
+        <div class="card product-card p-3">
+          <a href="#buy" class="d-flex pic-box">
+            <img src="./images/console-xbox-serie-s.webp" class="card-img-top game-pic" alt="Console Xbox Series S">
+          </a>
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+      </li>
+      <div class="col-3">
+        <div class="card product-card p-3">
+          <a href="#buy" class="d-flex pic-box">
+            <img src="./images/headset-gamer-razer-kraken-black-multiplataforma.jpg" class="card-img-top game-pic"
+              alt="Headset Gamer Razer Kraken Black Multiplataforma">
+          </a>
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+      </div>
+    </ul>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

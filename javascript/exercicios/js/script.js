@@ -54,3 +54,27 @@ switch (nota) {
     default:
         console.log("Nota inválida!");
 }
+
+let carro = {
+    marca: "Ford",
+    modelo: "Fusion",
+    quilometragem: 23000,
+    cor: "Preto",
+    opcionais: {
+        ar: true,
+        vidro: true,
+        trava: true,
+        radio: true,
+    },
+    donos: ["Jonas", "Ivo", "Léo"],
+    ligar: function() {
+        console.log("vruummm...")
+    },
+    acelerar: function(motorista) {
+        console.log(`${motorista} está acelerando`)
+    },
+}
+
+carro.acelerar(carro.donos[0])
+
+console.log(carro.opcionais.vidro)
