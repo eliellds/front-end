@@ -1,18 +1,18 @@
 let texto1 = document.getElementById("demo")
-texto1.innerHTML = "Olá"
+texto1.textContent = "Olá"
 console.log(texto1)
 
 let texto2 = document.getElementsByTagName("p")
-texto2[0].innerHTML = "Olá"
+texto2[0].innerText = "Olá"
 console.log(texto2)
 
-let texto3 = document.querySelector(".test")
-texto3.innerHTML = "Olá de novo"
+let texto3 = document.querySelectorAll(".test")
+texto3[0].textContent = "Olá de novo"
 console.log(texto3)
 
-// let changing = document.getElementById("image")
-// changing.setAttribute("src", "angry.gif")
-// console.log(changing)
+let changing = document.getElementById("image")
+changing.setAttribute("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Zelda_Logo.svg/1200px-Zelda_Logo.svg.png")
+console.log(changing)
 
 let newValue = document.getElementById("myText")
 newValue.setAttribute("value", "Bye")
