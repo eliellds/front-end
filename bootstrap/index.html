@@ -14,6 +14,7 @@
   <!-- begin header -->
   <header>
     <div class="container hole-header">
+
       <!-- begin first header -->
       <div class="row align-items-center first-header headers py-1 ps-3 justify-content-between">
         <div class="col-lg-4 col-xl-7 infos ps-2">
@@ -33,6 +34,7 @@
               src="./images/instagram.png" /></a>
         </div>
       </div>
+
       <!-- begin second header -->
       <div class="row align-items-center second-header headers py-1">
         <div class="col-4 search-box">
@@ -45,7 +47,7 @@
         <div class="col-4 ps-5">
           <h1>
             <a href="#uzgames" class="logo py-3 px-4 mt-5" title="UZGAMES">
-              <img src="./images/uzgame-site-e-logo.png" class="logo" alt="UZGAMES"/>
+              <img src="./images/uzgame-site-e-logo.png" class="logo" alt="UZGAMES" />
             </a>
           </h1>
         </div>
@@ -56,7 +58,81 @@
           </form>
         </div>
       </div>
+
+      <!-- begin hidden header -->
+      <div class="row hidden-header">
+
+        <!-- begin canvas menu -->
+        <div class="col-2 d-flex m-0 new-menu">
+          <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions">
+            <img src="./images/menu.png" class="menu-btn" alt="Menu">
+          </button>
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+
+              <div class="flex-column">
+                <ul class="canvas-menu">
+                  <li><a class="nav-link menu-nav white-links" href="#">QUEM SOMOS</a></li>
+                  <li><a class="nav-link menu-nav white-links" href="#">MINHA CONTA</a></li>
+                  <li><a class="nav-link menu-nav white-links" href="#">CADASTRE-SE</a></li>
+                  <li><a class="nav-link menu-nav white-links" href="#">MEUS PEDIDOS</a></li>
+                  <li><a class="nav-link menu-nav white-links" href="#">SUPER HITS</a></li>
+                  <li><a class="nav-link menu-nav white-links" href="#">JOGOS</a></li>
+                  <li><a class="nav-link menu-nav white-links" href="#">CONSOLES</a></li>
+                  <li><a class="nav-link menu-nav white-links" href="#">PC GAMER</a></li>
+                  <li><a class="nav-link menu-nav white-links" href="#">CONTROLES</a></li>
+                  <li><a class="nav-link menu-nav white-links" href="#">COLECIONÁVEIS</a></li>
+                  <li><a class="nav-link menu-nav white-links" href="#">FUNKOS</a></li>
+                  <li><a class="nav-link menu-nav white-links" href="#">USADOS</a></li>
+                  <li><a class="nav-link menu-nav white-links" href="#">ACESSÓRIOS</a></li>
+                  <li><a class="nav-link menu-nav white-links" href="#">RARIDADES</a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- end canvas menu -->
+
+        <div class="col-8 d-flex new-logo">
+          <h1 class="d-flex justify-content-center">
+            <a href="#uzgames" class="new-logo align-items-center mt-0" title="UZGAMES">
+              <img src="./images/uzgame-site-e-logo.png" class="new-logo mt-0" alt="UZGAMES" />
+            </a>
+          </h1>
+        </div>
+
+        <!-- begin hidden cart -->
+        <div class="col-2 d-flex justify-content-end align-items-center p-3">
+          <a href="#cart" class="hidden-cart">
+            <img src="./images/shopping-cart-white.png" class="new-cart" alt="Carrinho de compras">
+          </a>
+        </div>
+        <!-- end hidden cart -->
+
+        <div class="d-flex hidden-search">
+          <div class="col-12 search-box justify-content-end m-0">
+            <form class="d-flex py-2">
+              <input class="form-control new-search" type="search" placeholder="Digite o que procura?"
+                aria-label="Busca">
+              <button class="btn new-buttom justify-content-end" type="submit">
+                <img src="./images/lupa.png" class="search-buttom" />
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+      <!-- end hidden header -->
+
     </div>
+
   </header>
   <!-- end header -->
 
@@ -64,7 +140,7 @@
   <nav class="navbar navbar-expand-lg custom-navbar">
     <div class="container">
       <div class="navbar-d-flex col-12" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-between">
+        <ul class="navbar-nav d-flex mb-2 mb-lg-0 justify-content-between">
           <li class="nav-item dropdown">
             <a class="nav-link plus-nav white-links" href="#" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
@@ -233,8 +309,10 @@
   <div id="carouselExampleControls" class="carousel slide mb-5" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="8000">
-        <a href="#carousel"><img src="./images/banner-consoles-ps4-nintento-switch.png" class="d-block w-100"
-            alt="Consoles PS4 Spider-Man Nintendo Switch"></a>
+        <a href="#carousel">
+          <img src="./images/banner-consoles-ps4-nintento-switch.png" class="d-block w-100"
+            alt="Consoles PS4 Spider-Man Nintendo Switch">
+        </a>
       </div>
       <div class="carousel-item" data-bs-interval="8000">
         <a href="#carousel">
@@ -267,73 +345,309 @@
   <div class="container product-list">
 
     <div class="row mt-5 mb-3">
-      <h3 class="list-name">PRODUTOS EM <em class="list-name emphasize-red">DESTAQUE</em></h3>
+      <h2 class="list-name">PRODUTOS EM <em class="list-name emphasize-red">DESTAQUE</em></h2>
     </div>
 
     <ul class="row highlight-product-list">
-      <li class="col-3">
+      <li class="col-sm-12 col-md-6 col-lg-3">
         <div class="card product-card p-3 d-flex">
-          <a href="#buy" class="d-flex pic-box">
-            <img src="./images/jogo-ps4-marvels-spiderman-miles-morales.webp" class="card-img-top game-pic"
-              alt="Jogo PS4 Marvels Spider-Man Miles Morales">
-          </a>
-          <div class="card-body p-0">
-            <div class="product-name">
+          <div class="buy-cart">
+            <a href="#buy" class="d-flex pic-box">
+              <img src="./images/jogo-ps4-marvels-spiderman-miles-morales.webp" class="card-img-top game-pic"
+                alt="Jogo PS4 Marvels Spider-Man Miles Morales">
+            </a>
+          </div>
+          <div class="card-body d-flex">
+            <div class="product-name d-flex">
               <h3 class="product-name">Jogo PS4 Marvel´s Spiderman Miles Morales</h3>
             </div>
-            <div class="full-price">
-              R$279,90
-            </div>
-            <div class="price-off">
-              R$269,90
-            </div>
-            <div class="text-parcelas d-flex">
-              <p>
-                ou <strong class="emphasize-red parcelas">7x</strong> de 
-                <strong class="emphasize-red parcelas">R$38,56</strong> Sem juros
-              </p>
+            <div class="prices d-flex">
+              <div class="full-price">
+                R$279,90
+              </div>
+              <div class="price-off">
+                R$269,90
+              </div>
+              <div class="text-parcelas d-flex">
+                <p>
+                  ou <strong class="emphasize-red parcelas">7x</strong> de
+                  <strong class="emphasize-red parcelas">R$38,56</strong> Sem juros
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </li>
-      <li class="col-3">
+      <li class="col-sm-12 col-md-6 col-lg-3">
         <div class="card product-card p-3">
           <a href="#buy" class="d-flex pic-box">
             <img src="./images/jogo-nintendo-switch-the-legend-of-zelda-breath-of-the-wild.jpg"
               class="card-img-top game-pic" alt="Jogo Nintendo Switch The Legend Of Zelda Breath Of The Wild">
           </a>
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+          <div class="card-body d-flex">
+            <div class="product-name d-flex">
+              <h3 class="product-name">Jogo Nintendo Switch The Legend Of Zelda: Breath Of The Wild</h3>
+            </div>
+            <div class="prices d-flex">
+              <div class="full-price">
+                R$469,90
+              </div>
+              <div class="price-off">
+                R$449,90
+              </div>
+              <div class="text-parcelas d-flex">
+                <p>
+                  ou <strong class="emphasize-red parcelas">12x</strong> de
+                  <strong class="emphasize-red parcelas">R$37,49</strong> Sem juros
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </li>
-      <li class="col-3">
+      <li class="col-sm-12 col-md-6 col-lg-3">
         <div class="card product-card p-3">
           <a href="#buy" class="d-flex pic-box">
             <img src="./images/console-xbox-serie-s.webp" class="card-img-top game-pic" alt="Console Xbox Series S">
           </a>
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+          <div class="card-body d-flex">
+            <div class="product-name d-flex">
+              <h3 class="product-name">Console Xbox Series S</h3>
+            </div>
+            <div class="prices d-flex">
+              <div class="full-price" style="display: none">
+                R$3.199,90
+              </div>
+              <div class="price-off">
+                R$3.199,90
+              </div>
+              <div class="text-parcelas d-flex">
+                <p>
+                  ou <strong class="emphasize-red parcelas">7x</strong> de
+                  <strong class="emphasize-red parcelas">R$38,56</strong> Sem juros
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </li>
-      <div class="col-3">
+      <div class="col-sm-12 col-md-6 col-lg-3">
         <div class="card product-card p-3">
           <a href="#buy" class="d-flex pic-box">
             <img src="./images/headset-gamer-razer-kraken-black-multiplataforma.jpg" class="card-img-top game-pic"
               alt="Headset Gamer Razer Kraken Black Multiplataforma">
           </a>
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+          <div class="card-body d-flex">
+            <div class="product-name d-flex">
+              <h3 class="product-name">Jogo PS4 Marvel´s Spiderman Miles Morales</h3>
+            </div>
+            <div class="prices d-flex">
+              <div class="full-price">
+                R$279,90
+              </div>
+              <div class="price-off">
+                R$269,90
+              </div>
+              <div class="text-parcelas d-flex">
+                <p>
+                  ou <strong class="emphasize-red parcelas">7x</strong> de
+                  <strong class="emphasize-red parcelas">R$38,56</strong> Sem juros
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </ul>
   </div>
+  <!-- end product-list -->
 
+  <!-- begin footer -->
+  <footer>
+
+    <!-- begin fisrt footer -->
+    <div class="first-footer">
+      <div class="container">
+        <div class="row banner-footer">
+          <div class="col-12">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="8000">
+                  <a href="#links-banner-footer">
+                    <img src="./images/footer-banner-1.jpg" class="d-block w-100" alt="Lançamentos e Destaques">
+                  </a>
+                </div>
+                <div class="carousel-item" data-bs-interval="8000">
+                  <a href="#links-banner-footer">
+                    <img src="./images/footer-uz-points.png" class="d-block w-100" alt="UZ Points">
+                  </a>
+                </div>
+                <div class="carousel-item" data-bs-interval="8000">
+                  <a href="#links-banner-footer">
+                    <img src="./images/footer-banner-3.png" class="d-block w-100" alt="Jogue e Troque">
+                  </a>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- begin second footer -->
+    <div class="second-footer">
+      <div class="container">
+        <div class="row">
+          <div class="d-flex col-md-12 col-lg-4 text-sign">
+            <p>
+              Cadastre seu e-mail para receber ofertas exclusivas da <b>nossa loja</b>
+            </p>
+          </div>
+          <div class="col-md-12 col-lg-8 d-flex justify-content-end">
+            <form class="d-flex sign-box">
+              <input type="text" class="sign-form" placeholder="Seu nome" aria-label="Seu nome">
+              <input type="email" class="sign-form" placeholder="Seu email" aria-label="Seu email">
+              <button type="submit" class="btn-sign">
+                CADASTRAR
+              </button>
+              <div id="emailHelp" class="form-text d-flex">
+                Ao clicar em cadastrar, você estará aceitando receber emails promocionais
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- begin third footer -->
+    <div class="third-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4 d-flex footer-list">
+            <h4 class="footer-title">INSTITUCIONAL</h4>
+            <ul class="link-list">
+              <li>
+                <a href="#list-footer" class="white-links">Empresa</a>
+              </li>
+              <li>
+                <a href="#list-footer" class="white-links">Como Comprar</a>
+              </li>
+              <li>
+                <a href="#list-footer" class="white-links">Seguranca</a>
+              </li>
+              <li>
+                <a href="#list-footer" class="white-links">Envio</a>
+              </li>
+              <li>
+                <a href="#list-footer" class="white-links">Pagamento</a>
+              </li>
+              <li>
+                <a href="#list-footer" class="white-links">Tempo de Garantia</a>
+              </li>
+              <li>
+                <a href="#list-footer" class="white-links">Listas</a>
+              </li>
+              <li>
+                <a href="#list-footer" class="white-links">Notícias</a>
+              </li>
+              <li>
+                <a href="#list-footer" class="white-links">Lojas Uzgames</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 d-flex footer-list">
+            <h4 class="footer-title">CONTATO</h4>
+            <ul class="link-list">
+              <li>
+                <div class="contact-numbers d-flex">
+                  <div class="d-flex contact-me message-me">(11) 95141-1450</div>
+                  <div class="d-flex contact-me phone-me">(11) 4095-3013</div>
+                </div>
+                <div class="contact-list sac-me">
+                  Sac.: de 2aF a 6aF das 8h até 18h
+                </div>
+                <div class="contact-list mail-me">
+                  <a class="white-links" href="mailto: eliel.lds@gmail.com?subject=Réplica UZ Games">
+                    sac@uzgames.com.br
+                  </a>
+                </div>
+                <div class="social-media-list">
+                  <a href="https://www.facebook.com/najaesportsteam" target="_blanc"><img class="social-media"
+                      src="./images/facebook.png" /></a>
+                  <a href="https://www.instagram.com/najaesportsteam/" target="_blanc"><img class="social-media"
+                      src="./images/instagram.png" /></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-12 col-lg-4">
+            <div class="last-banner d-flex">
+              <div class="d-flex col-12 justify-content-center">
+                <img src="./images/banner-consoles-ps4-nintento-switch.png" class="last-banner-img" alt="Contatos">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end third footer -->
+
+    <!-- begin last footer -->
+    <div class="last-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="row">
+              <h6 class="last-title">Formas de envio</h6>
+            </div>
+            <div class="row">
+              <img src="./images/sedex-logo.png" class="last-logos" alt="Sedex">
+              <img src="./images/pac-correios-logo.png" class="last-logos" alt="Pac">
+              <img src="./images/correios-logo.png" class="last-logos" alt="Correios">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="row">
+              <h6 class="last-title">Formas de pagamento</h6>
+            </div>
+            <div class="row">
+              <img src="./images/visa.png" class="last-logos" alt="Visa">
+              <img src="./images/logo-master.jpg" class="last-logos" alt="Mastercard">
+              <img src="./images/american-express.png" class="last-logos" alt="American Express">
+              <img src="./images/elo-logo.png" class="last-logos" alt="Elo">
+              <img src="./images/aura-logo.jpg" class="last-logos" alt="Aura">
+              <img src="./images/diners-club.jpg" class="last-logos" alt="Diners Club International">
+              <img src="./images/boleto.png" class="last-logos" alt="Boleto">
+              <img src="./images/jcb-logo.png" class="last-logos" alt="JCB">
+              <img src="./images/banco-do-brasil.png" class="last-logos" alt="Banco do Brasil">
+              <img src="./images/bradesco-logo.jpg" class="last-logos" alt="Bradesco">
+              <img src="./images/banco-itau-logo.jpg" class="last-logos" alt="Itau">
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="row">
+              <h6 class="last-title">Selos de segurança</h6>
+            </div>
+            <div class="row">
+              <img src="./images/selo-lojaprotegida.gif" class="last-logos" alt="Selo Loja Protegida">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
