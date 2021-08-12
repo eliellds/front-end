@@ -1,0 +1,22 @@
+.btn {
+    width: 100px;
+    margin: 10px 0;
+}
+
+.erro {
+    color: red;
+    display: none;
+}
+
+.sucesso {
+    color: green;
+    display: none;
+}
+
+.formularios div {
+    margin-top: 15px;
+}
+
+.formularios label {
+    font-weight: bold;
+}

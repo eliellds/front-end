@@ -29,8 +29,8 @@ a {
     border-bottom: #414141 1px solid;
 }
 
-.profile, .contact, .medias, .social-media, .search-box, 
-.cart-box, .highlight-product-list, .card-body, .link-list, .canvas-menu, .last-title {
+.profile, .contact, .medias, .social-media, .search-box, .cart-box, 
+.highlight-product-list, .card-body, .link-list, .canvas-menu, .last-title {
     padding: 0;
 }
 
@@ -127,7 +127,8 @@ a {
     background-color: #2a2a2a;
 }
 
-.plus-nav, .btn-sign, .contact-numbers, .btn-close, .other-nav:hover, .other-nav:focus, .menu-nav:hover, .hidden-cart::before {
+.plus-nav, .btn-sign, .contact-numbers, .btn-close, 
+.other-nav:hover, .other-nav:focus, .menu-nav:hover, .hidden-cart::before {
     background-color: #fb0000;
 }
 

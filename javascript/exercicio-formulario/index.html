@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'>
+    <title>Document</title>
+    <link rel='stylesheet' href='./css/styles.css'>
+</head>
+
+<body>
+
+    <!-- inicio menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">CRUD</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Clientes
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- fim menu -->
+
+    <!-- inicio formulario -->
+    <div class="container">
+        <h1 class="my-4">Novo Cliente</h1>
+        <form>
+            <div class="row mb-3 formularios">
+                <div class="col-md-12 col-lg-7">
+                    <label for="nomeRazao" class="form-label">Nome / Razão Social</label>
+                    <input type="text" id="nomeRazao" class="form-control">
+                    <div class="erro-nomeRazao erro">Campo inválido</div>
+                    <div class="sucesso-nomeRazao sucesso">OK</div>
+                </div>
+                <div class="col-sm-8 col-lg-5 col-xl-3">
+                    <label for="cpfCnpj" class="form-label">CPF / CNPJ</label>
+                    <input type="text" id="cpfCnpj" class="form-control">
+                    <div class="erro-cpfCnpj erro">Campo inválido</div>
+                    <div class="sucesso-cpfCnpj sucesso">OK</div>
+                </div>
+                <div class="col-sm-4 col-xl-2">
+                    <label for="dataNascimento" class="form-label">Data de Nascimento</label>
+                    <input type="text" id="dataNascimento" class="form-control">
+                    <div class="erro-dataNascimento erro">Campo inválido</div>
+                    <div class="sucesso-dataNascimento sucesso">OK</div>
+                </div>
+                <div class="col-lg-8 col-xl-5">
+                    <label for="endereco" class="form-label">Endereço</label>
+                    <input type="text" id="endereco" class="form-control">
+                    <div class="erro-endereco erro">Campo inválido</div>
+                    <div class="sucesso-endereco sucesso">OK</div>
+                </div>
+                <div class="col-lg-6 col-xl-3">
+                    <label for="bairro" class="form-label">Bairro</label>
+                    <input type="text" id="bairro" class="form-control">
+                    <div class="erro-bairro erro">Campo inválido</div>
+                    <div class="sucesso-bairro sucesso">OK</div>
+                </div>
+                <div class="col-sm-8 col-lg-3 col-xl-2">
+                    <label for="cep" class="form-label">CEP</label>
+                    <input type="text" id="cep" class="form-control">
+                    <div class="erro-cep erro">Campo inválido</div>
+                    <div class="sucesso-cep sucesso">OK</div>
+                </div>
+                <div class="col-sm-4 col-lg-3 col-xl-2">
+                    <label for="dataCadastro" class="form-label">Data de Cadastro</label>
+                    <input type="text" id="dataCadastro" class="form-control">
+                    <div class="erro-dataCadastro erro">Campo inválido</div>
+                    <div class="sucesso-dataCadastro sucesso">OK</div>
+                </div>
+                <div class="col-lg-6 col-xl-3">
+                    <label for="municipio" class="form-label">Municipio</label>
+                    <input type="text" id="municipio" class="form-control">
+                    <div class="erro-municipio erro">Campo inválido</div>
+                    <div class="sucesso-municipio sucesso">OK</div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 col-xl-2">
+                    <label for="telefone" class="form-label">Telefone</label>
+                    <input type="text" id="telefone" class="form-control">
+                    <div class="erro-telefone erro">Campo inválido</div>
+                    <div class="sucesso-telefone sucesso">OK</div>
+                </div>
+                <div class="col-sm-6 col-lg-3 col-xl-2">
+                    <label for="celular" class="form-label">Celular</label>
+                    <input type="text" id="celular" class="form-control">
+                    <div class="erro-celular erro">Campo inválido</div>
+                    <div class="sucesso-celular sucesso">OK</div>
+                </div>
+                <div class="col-4 col-sm-2 col-lg-1">
+                    <label for="uf1" class="form-label">UF</label>
+                    <!-- <input type="text" id="uf1" class="form-control"> -->
+                    <select name="ufs" id="uf1" class="form-control">
+                        <option value="" class="form-control" selected>...</option>
+                        <option value="AC" class="form-control">AC</option>
+                        <option value="AL" class="form-control">AL</option>
+                        <option value="AM" class="form-control">AM</option>
+                        <option value="AP" class="form-control">AP</option>
+                        <option value="BA" class="form-control">BA</option>
+                        <option value="CE" class="form-control">CE</option>
+                        <option value="DF" class="form-control">DF</option>
+                        <option value="ES" class="form-control">ES</option>
+                        <option value="GO" class="form-control">GO</option>
+                        <option value="MA" class="form-control">MA</option>
+                        <option value="MG" class="form-control">MG</option>
+                        <option value="MS" class="form-control">MS</option>
+                        <option value="MT" class="form-control">MT</option>
+                        <option value="PA" class="form-control">PA</option>
+                        <option value="PB" class="form-control">PB</option>
+                        <option value="PE" class="form-control">PE</option>
+                        <option value="PI" class="form-control">PI</option>
+                        <option value="PR" class="form-control">PR</option>
+                        <option value="RN" class="form-control">RN</option>
+                        <option value="RO" class="form-control">RO</option>
+                        <option value="RR" class="form-control">RR</option>
+                        <option value="RS" class="form-control">RS</option>
+                        <option value="SC" class="form-control">SC</option>
+                        <option value="SE" class="form-control">SE</option>
+                        <option value="SP" class="form-control">SP</option>
+                        <option value="TO" class="form-control">TO</option>
+                      </select>
+                    <div class="erro-uf1 erro">Campo inválido</div>
+                    <div class="sucesso-uf1 sucesso">OK</div>
+                </div>
+                <div class="col-12 col-sm-8 col-lg-3">
+                    <label for="inscricaoEstadual" class="form-label">Inscrição Estadual</label>
+                    <input type="text" id="inscricaoEstadual" class="form-control">
+                    <div class="erro-inscricaoEstadual erro">Campo inválido</div>
+                    <div class="sucesso-inscricaoEstadual sucesso">OK</div>
+                </div>
+                <div class="col-4 col-sm-2 col-lg-1">
+                    <label for="uf2" class="form-label">UF</label>
+                    <input type="text" id="uf2" class="form-control">
+                    <div class="erro-uf2 erro">Campo inválido</div>
+                    <div class="sucesso-uf2 sucesso">OK</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <input type="submit" class="btn btn-primary" value="Salvar"></input>
+                    <button type="reset" class="btn btn-light border">Cancelar</button>
+                </div>
+            </div>
+        </form>
+        <div class="my-3">
+            <spam>
+                ©2016 - Web Dev Academy
+            </spam>
+        </div>
+
+    </div>
+    <!-- fim formulario -->
+
+
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js'
+        integrity='sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM'
+        crossorigin='anonymous'></script>
+    <script src='./js/app.js'></script>
+</body>
+
+</html>
