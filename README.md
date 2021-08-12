@@ -1,1 +1,1 @@
-# exercicios e projetos iniciais em HTML, CSS, Bootstrap e JavaScript
+# Exercicios e projetos iniciais em HTML, CSS, Bootstrap e JavaScript.
