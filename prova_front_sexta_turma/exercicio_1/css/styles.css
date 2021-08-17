@@ -2,52 +2,47 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #dddddd;
+}
+
 .principal {
-    padding: 0 100px;
-    min-width: 350px;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
 }
 
-.navbar {
-    background-color: grey;
-    margin-top: 30px;
+header, footer {
+    padding: 0 12px;
 }
 
-.l-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0;
+.head-container, .blocos-menores, .blocos-maiores, .foot-container {
+    background-color: #808080;
 }
 
-.l-container div {
-    width: 200px;
-    height: 100px;
-    background-color: grey;
-    margin: 10px 0;
-}
-
-.r-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-}
-
-.r-container div {
-    width: 300px;
+.head-container, .foot-container, .blocos-menores {
     height: 200px;
-    background-color: grey;
-    margin: 10px 0;
+    min-width: 200px;
 }
 
-.l-container {
-    margin: 0;
-    padding: 0;
+.blocos-menores, .blocos-maiores {
+    width: 100%;
+    min-width: 200px;
 }
 
-footer {
-    background-color: grey;
-    height: 40px;
-    margin-bottom: 30px;
+.blocos-menores {
+    margin-top: 15px;
+}
+
+.blocos-maiores {
+    height: 300px;
+}
+
+footer, .blocos-maiores {
+    margin-top: 15px;
+}
+
+.foot-text, .head-text, .blocos-maiores {
+    font-size: 40px;
+    font-weight: bold;
 }
